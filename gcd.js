@@ -1,15 +1,22 @@
-const getGcd = (x,y) => {
-    if (x < y) {
-        smallest = x
+const gcd = (num1, num2) => {
+
+    num1 = Math.abs(parseInt(num1));
+    num2 = Math.abs(parseInt(num2));
+
+    if (num2 >= num1) {
+        bigNum = num2
+        smallNum = num1
     } else {
-        smallest = y
+        bigNum = num1
+        smallNum = num2
     }
-    console.log(z)
-while ( ) {
 
-
+    const rmdr = bigNum % smallNum
+    if (rmdr != 0) {
+        gcd(rmdr, smallNum)
+    } else {
+        console.log(smallNum)
+    }
 }
 
-}
-
-getGcd(5,6)
+gcd(-99, '-999')

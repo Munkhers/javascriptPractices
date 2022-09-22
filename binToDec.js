@@ -1,10 +1,13 @@
 
 const binToDec = (binary) => {
-    console.log(binary.toString())
+    
+    // binary.toString()
+    let param = binary.toString();
 
+    for(let index = param.length - 1; index >= 0; index--) {
+        console.log(param[index]);
+        console.log(parseInt(param[index]));
+    }
 
-for ( i = binary.length - 1; i <= binary.length; i++) {
-    console.log()
 }
-}
-binToDec(110)
+binToDec(10101010)

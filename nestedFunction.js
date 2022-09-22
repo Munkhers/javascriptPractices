@@ -1,7 +1,7 @@
-function randomFunction(x) {
-    function randomFunction1(y){
-        function randomFunction2(z){
-            return x * y * z
+function randomFunction(num1) {
+    function randomFunction1(num2){
+        function randomFunction2(num3){
+            return num1 * num2 * num3
         }
         return randomFunction2
     }
@@ -9,4 +9,4 @@ function randomFunction(x) {
 }
 
         
-console.log(randomFunction(0)(3)(5))
+console.log(randomFunction(5)(8)(3))
