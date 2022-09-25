@@ -10,3 +10,15 @@ function randomFunction(num1) {
 
         
 console.log(randomFunction(5)(8)(3))
+
+
+const randomFunction3 = (a) => {
+    const randomFunction4 = (b) => {
+        const randomFunction5 = (c) => {
+            return a * b * c
+        }
+        return randomFunction5
+    }
+    return randomFunction4
+}
+console.log(randomFunction3(1)(2)(3))

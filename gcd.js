@@ -1,14 +1,24 @@
 const gcd = (num1, num2) => {
+    num1 = parseInt(num1)
+    num2 = parseInt(num2)
 
-    num1 = Math.abs(parseInt(num1));
-    num2 = Math.abs(parseInt(num2));
+    if (Number.isNaN(num1) || Number.isNaN(num2)) {
+        console.log('must be number')
+        return
+    }
+    num1 = Math.abs(num1);
+    num2 = Math.abs(num2);
+
+
+    let bigNum = num1
+    let smallNum = num2
 
     if (num2 >= num1) {
         bigNum = num2
         smallNum = num1
-    } else {
-        bigNum = num1
-        smallNum = num2
+        // } else {
+        //     bigNum = num1
+        //     smallNum = num2
     }
 
     const rmdr = bigNum % smallNum
@@ -17,6 +27,7 @@ const gcd = (num1, num2) => {
     } else {
         console.log(smallNum)
     }
+
 }
 
-gcd(-99, '-999')
+gcd(-99, '55')
