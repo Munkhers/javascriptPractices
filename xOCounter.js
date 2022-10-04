@@ -1,22 +1,12 @@
 let numOfX = 0
 let numOfO = 0
 const xOCounter = (xos) => {
-    let lower = xos.toLowerCase()
-    let splitted = lower.split('')
-    splitted.forEach(letter => )
+    let splitted = xos.split('');
 
-    // for (i = 0; i < lower.length; i++) {
-    //     if (lower[i] === 'x') {
-    //         numOfX++
-    //     } else if (lower[i] === 'o') {
-    //         numOfO++
-    //     }
-    // }
-    // if (numOfX === numOfO)
-    //     return true 
-    //         return false
-        
+    splitted.map((item) => {
+        item === 'x' || item === 'X' ? numOfX++ : (item === 'o' || item === 'O') && numOfO++
+    })
+
+    return numOfX === numOfO;
 }
-
-
-xOCounter('xoXoXaXO')
+console.log(xOCounter('xoXoXaO'))

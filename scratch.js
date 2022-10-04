@@ -1,23 +1,4 @@
-
-
-
-const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
-
-const map2 = (callbackFunction) => {
-    for(let i = 0; i < animals.length; i++) {
-        callbackFunction(animals[i], i, animals)
-    }
-}
-
-
-
-const secretMessage = animals.map((animal, animalIdx, wholeArray) => {
-    console.log('map', animal, animalIdx, wholeArray)
+const ages = [20, 25, 1, 55, 34, 17, 16, 25, 29]
+ages.map((age) => {
+    console.log(age)
 })
-
-const secretMessage2 = map2((animal, animalIdx, wholeArray) => {
-    console.log('map2', animal, animalIdx, wholeArray)
-})
-
-   
-  

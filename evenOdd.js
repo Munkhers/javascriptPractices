@@ -1,8 +1,7 @@
 const checkNumber = (num) => {
-    if(num % 2 === 0){
-        console.log(num + ' is an even number')
-    } else {
-        console.log( num + ' is an odd number')
-    }
+    return num % 2 === 0 ? console.log(num + ' is an even number') : console.log( num + ' is an odd number')
 } 
-checkNumber(3)
+checkNumber(5)
+
+
+
