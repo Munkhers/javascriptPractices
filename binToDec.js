@@ -1,18 +1,15 @@
 
 const binToDec = (binary) => {
-    
-    binary.toString()
-    let param = binary.toString().split('').reverse();
-    
-    param.map((item) => {
-        ;
-        console.log(typeof param)
+
+    let revdBin = binary.toString().split('').reverse();
+    let deci = 0;
+
+    revdBin.map((num, i) => {
+        deci += (num * Math.pow(2, i));
     })
 
-    // for(let index = param.length - 1; index >= 0; index--) {
-    //     console.log(param[index]);
-    //     console.log(parseInt(param[index]));
-    }
+    console.log('The decimal form of this binary is ' + deci);
+}
 
 
-binToDec(110)
+binToDec(11011011);

@@ -1,0 +1,42 @@
+
+.header {
+    display: flex;
+    border-style:solid;
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    height: 80px;
+    
+    
+    
+
+}
+.footer {
+    display: flex;
+    border-style:solid;
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    align-items: flex-end;
+    height: 80px;
+
+}
+
+.body {
+    border-style:solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+
+}
+.container {
+    flex-direction: column;
+    display:flex;
+    border-style:solid;
+    border-width: 10px;
+
+}
+

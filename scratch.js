@@ -1,4 +1,8 @@
-const ages = [20, 25, 1, 55, 34, 17, 16, 25, 29]
-ages.map((age) => {
-    console.log(age)
+const randomFunction = ( num1, num2, cb) => {
+    cb(num1, num2)
+}
+
+
+randomFunction(2, 4, (x,y) => {
+    console.log(x * y)
 })

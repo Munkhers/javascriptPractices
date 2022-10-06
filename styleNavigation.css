@@ -1,0 +1,22 @@
+.nav-bar {
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #87cefa;
+}
+.nav-bar-menu {
+    display: flex;
+    color: white;
+}
+.nav-bar-item {
+    list-style-type: none;
+    display:flex;
+    padding: 0 5px;
+    color: white;
+}
+a {
+    text-decoration: none;
+    justify-content: space-between;
+    color: white;
+}
